@@ -26,4 +26,15 @@ public class DataAccessServiceImpl implements DataAccessService {
 		Mono<Entry> read = mongoTemplate.findById(id, Entry.class);
 		return read;
 	}
+	
+	// Display lists (title plus entries)
+	
+	// how protocol would affect reading the list
+	
+	// Query for particular lists .. search framwork (index names and query at once) 
+	
+	// Search autocomplete for names... 
+	
+	
+	
 }
