@@ -12,16 +12,18 @@ public class Title {
     private String id;
     private String version;
     private String owner;
+    private String protocol; // way of reading data, sorting, prioritizing fields
     private URL url;
     private List<String> names;
     private List<String> tags;
-    private List<String> entries;
+    private List<Entry> entries;
     
-	public Title(String id, String version, String owner, URL url, List<String> names, List<String> tags,
-			List<String> entries) {
+	public Title(String id, String version, String owner, String protocol, URL url, List<String> names, List<String> tags,
+			List<Entry> entries) {
 		this.id = id;
 		this.version = version;
 		this.owner = owner;
+		this.protocol = protocol;
 		this.url = url;
 		this.names = names;
 		this.tags = tags;
@@ -39,6 +41,10 @@ public class Title {
 	public String getOwner() {
 		return owner;
 	}
+	
+	public String getProtocol() {
+		return protocol;
+	}
 
 	public URL getUrl() {
 		return url;
@@ -52,7 +58,7 @@ public class Title {
 		return tags;
 	}
 
-	public List<String> getEntries() {
+	public List<Entry> getEntries() {
 		return entries;
 	}
 	

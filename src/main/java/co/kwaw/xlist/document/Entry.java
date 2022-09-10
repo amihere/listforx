@@ -12,15 +12,15 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Entry {
     @Id
     private String id;
-    private String version;
-    private String owner;
-    private URL url;
-    private List<String> titles;
+    private String version; // mongo is schema-less
+    private String owner; // who created list entry
+    private URL url; // any external information
+    private List<String> titles; // title of the main list
     private List<String> tags;
-    private Map<String, String> internal;
+    private Map<String, String> internal; // metadata
     private String previousId;
-    private String nextId;
-    private String document;
+    private String nextId; // useful for ranking
+    private String document; // Anything (html encoded) <image>
     private LocalDateTime dateCreated;
     
 	public Entry() {}
