@@ -10,14 +10,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import co.kwaw.xlist.document.Entry;
-import co.kwaw.xlist.service.DataAccessService;
+import co.kwaw.xlist.service.impl.DataAccessServiceImpl;
 import reactor.core.publisher.Mono;
 
 @RestController
 public class EntryController {
 
 	@Autowired
-	private DataAccessService dataAccessService;
+	private DataAccessServiceImpl dataAccessService;
 
 	@PostMapping("/entry")
 	public Mono<Entry> postEntry(@RequestBody Entry entry) throws MalformedURLException {

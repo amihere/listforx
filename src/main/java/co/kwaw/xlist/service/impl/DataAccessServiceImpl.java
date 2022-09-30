@@ -2,12 +2,13 @@ package co.kwaw.xlist.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.ReactiveMongoTemplate;
+import org.springframework.stereotype.Service;
 
 import co.kwaw.xlist.document.Entry;
 import co.kwaw.xlist.service.DataAccessService;
 import reactor.core.publisher.Mono;
 
-
+@Service
 public class DataAccessServiceImpl implements DataAccessService {
 	
 	@Autowired
@@ -15,7 +16,6 @@ public class DataAccessServiceImpl implements DataAccessService {
 	
 	@Override
 	public Mono<Entry> insertEntry(Entry entry) {
-		System.out.println(Thread.currentThread().getName());
 		Mono<Entry> insertion = mongoTemplate.insert(entry);
 		return insertion;
 	}
