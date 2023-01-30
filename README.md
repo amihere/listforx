@@ -20,7 +20,7 @@ All information comes organized in categories. e.g. news, food, sports results. 
 ```
 
 To explain the concept, let us take an example. My small news agency needs a quick and easy way to archive news articles written by us.
-I can harness listforx for this purpose. In order to do so, I can create a sample JSON for each article that looks like this:
+I can harness *listforx* for this purpose. In order to do so, I can create a sample JSON for each article that looks like this:
 ```
 {
   "id": "a-unique-id",
