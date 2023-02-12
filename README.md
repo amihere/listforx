@@ -42,5 +42,18 @@ The protocol has the following utility:
   - It can also be a way to sort the data. eg. by date, name, or even just numbering.
   - It is extensible. The protocol can adapted to fit whatever its creator sees fit.
 
+## Protocol
+### Namespaces
+Each protocol will have a namespace, ensuring it is uniquely identifiable. With this, not only the author but anybody can return and add more data to this category of information. e.g. http://data.com/example/namespace.
+
+### Fields
+Each namespace will have data unique to it. In order to make itself readable, the protocol would have to define the fields available. 
+The list of fields always will include the following: dateCreated, title, id, link. However, to acheive the dream of being extensible, there is room to add custom fields where needed. There is a limit to the number of custom fields of 10 at the time being.
+
+### Sorter
+Consider these two examples of data, a recipe and an archive. Order of steps to follow is important for a recipe whiles date is important for an archive. 
+For this reason, a protocol can nominate one field to use as the `sorter`. This field is then used to organize the list depending on the context. e.g. for the recipe, we could use `orderStep` to make sense of the data when querying it.
+
+
 Swagger docs link goes here: ->
 
