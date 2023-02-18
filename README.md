@@ -54,6 +54,10 @@ The list of fields always will include the following: dateCreated, title, id, li
 Consider these two examples of data, a recipe and an archive. Order of steps to follow is important for a recipe whiles date is important for an archive. 
 For this reason, a protocol can nominate one field to use as the `sorter`. This field is then used to organize the list depending on the context. e.g. for the recipe, we could use `orderStep` to make sense of the data when querying it.
 
+### Example 
 
+![Untitled-2023-02-18-2117](https://user-images.githubusercontent.com/17128203/219900793-09953a46-2149-4751-ae75-14284b660b51.png)
+
+<br>
 Swagger docs link goes here: ->
 
