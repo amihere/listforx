@@ -58,6 +58,9 @@ For this reason, a protocol can nominate one field to use as the `sorter`. This 
 
 ![Untitled-2023-02-18-2117](https://user-images.githubusercontent.com/17128203/219900793-09953a46-2149-4751-ae75-14284b660b51.png)
 
+## Design & Process
+We attempt to describe in more detail the case for ListforX and the preferred design choices at https://docs.google.com/presentation/d/15ndCKA3eErEKeW3i1KCVj8YnY8L9KIyBvJr691NBYKg/edit?usp=sharing
+
 <br>
 Swagger docs link goes here: ->
 
